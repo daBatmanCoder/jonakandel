@@ -4,7 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import { 
   Github, 
   Linkedin, 
-  Mail
+  Mail,
+  FileText
 } from 'lucide-react/dist/esm/icons';
 import BlockchainBackground from './components/BlockchainBackground';
 import CodeEditor from './components/CodeEditor';
@@ -191,6 +192,14 @@ function App() {
                 className="text-white hover:text-blue-400 transition-colors"
               >
                 <Mail size={32} />
+              </a>
+              <a 
+                href="/resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white hover:text-blue-400 transition-colors"
+              >
+                <FileText size={32} />
               </a>
             </div>
           </motion.div>
